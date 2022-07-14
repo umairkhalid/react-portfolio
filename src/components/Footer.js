@@ -14,7 +14,7 @@ export default function Footer() {
         <div className="nav-link" id="contact-nav">
           <a
             href="https://github.com/umairkhalid"
-            aria-label="Visit Christi's GitHub profile"
+            aria-label="Visit Umair's GitHub profile"
           >
             <FontAwesomeIcon
               icon={faGithubSquare}
