@@ -1,9 +1,11 @@
 import React from 'react';
+import NavTabs from './NavTabs';
 
-function Header() {
+export default function Header(props) {
   return (
-    <div>Header</div>
-  )
+    <header className="hero">
+      <h1 className="headings">Umair Khalid</h1>
+      <NavTabs currentPage={props.currentPage} handlePageChange={props.handlePageChange} />
+    </header>
+  );
 }
-
-export default Header
