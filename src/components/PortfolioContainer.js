@@ -9,7 +9,6 @@ import Footer from './Footer';
 //import stylesheet
 import '../styles/resets.css';
 import '../styles/style.css';
-import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState('About');

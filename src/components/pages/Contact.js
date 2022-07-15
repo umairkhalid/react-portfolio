@@ -1,5 +1,7 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
+import '../../styles/resets.css';
+import '../../styles/style.css';
 import '../../styles/form.css';
 
 //import validation helpers
@@ -92,9 +94,8 @@ const ContactUs = () => {
         </div>
         <div className='form-style'>
         <form id="contact-form" ref={form}>
-          <label for="name"><span>Name <span class="required">*</span></span>
+          <label htmlFor="name"><span>Name <span className="required">*</span></span>
           <input
-            className="input-field"
             value={name}
             name="name"
             onBlur={handleEmptyField}
@@ -104,9 +105,8 @@ const ContactUs = () => {
             id="name-input"
           /></label>
         
-          <label for="email"><span>Email <span class="required">*</span></span>
+          <label htmlFor="email"><span>Email <span className="required">*</span></span>
           <input
-            className="input-field"
             value={email}
             type="email"
             name="email"
@@ -116,9 +116,8 @@ const ContactUs = () => {
             id="email-input"
           /></label>
         
-          <label for="message"><span>Message <span class="required">*</span></span>
+          <label htmlFor="message"><span>Message <span className="required">*</span></span>
           <textarea
-            className="textarea-field"
             value={message}
             name="message"
             type="text"
@@ -127,10 +126,12 @@ const ContactUs = () => {
             placeholder="Your Message"
             id="example-message"
             ></textarea></label>
-            <label><span> </span><input type="submit" className="button" onClick={sendEmail} value="Submit" /></label>
-            {/* <button className="button" onClick={sendEmail}>
+            <div>
+            {/* <label><span> </span><input type="submit" className="bttn" onClick={sendEmail} value="Submit" /></label> */}
+            <button className="bttn" onClick={sendEmail}>
               Submit
-            </button> */}
+            </button>
+            </div>
         </form>
         {error && (
           <div>

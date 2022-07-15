@@ -1,17 +1,20 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
-import pdf from "../../assets/updated_Umair_CV_IT_New.pdf";
+import pdf from "../../assets/Umair_CV_IT_New.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
+// import "bootstrap/dist/css/bootstrap.min.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
-
-const resumeLink =
-  "https://github.com/umairkhalid/react-portfolio/blob/main/src/assets/Umair_CV_IT_New.pdf";
 
 function Resume() {
   const [width, setWidth] = useState(1200);
+  const [numPages, setNumPages] = useState(null);
+
+  function onDocumentLoadSuccess({ numPages }) {
+    setNumPages(numPages);
+  }
 
   useEffect(() => {
     setWidth(window.innerWidth);
@@ -30,12 +33,18 @@ function Resume() {
             <AiOutlineDownload />
             &nbsp;Download CV
           </Button>
+          <p>
+            Page {1} of {numPages}
+          </p>
         </Row>
 
-        <Row className="resume">
-          <Document file={resumeLink} className="d-flex justify-content-center">
+        <Row style={{ justifyContent: "center", position: "relative" }} className="resume">
+          <Document file={pdf} onLoadSuccess={onDocumentLoadSuccess} className="d-flex justify-content-center">
             <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
           </Document>
+          <p>
+            Page {1} of {numPages}
+          </p>
         </Row>
 
         <Row style={{ justifyContent: "center", position: "relative" }}>
