@@ -116,31 +116,29 @@ const ContactUs = () => {
             id="email-input"
           /></label>
         
-        <label for="message"><span>Message <span class="required">*</span></span>
-        <textarea
-          className="textarea-field"
-          value={message}
-          name="message"
-          type="text"
-          onBlur={handleEmptyField}
-          onChange={handleInputChange}
-          placeholder="Your Message"
-          id="example-message"
-          ></textarea></label>
-          <label><span> </span><input type="submit" className="button" onClick={sendEmail} value="Submit" /></label>
-          {/* <button className="button" onClick={sendEmail}>
-            Submit
-          </button> */}
+          <label for="message"><span>Message <span class="required">*</span></span>
+          <textarea
+            className="textarea-field"
+            value={message}
+            name="message"
+            type="text"
+            onBlur={handleEmptyField}
+            onChange={handleInputChange}
+            placeholder="Your Message"
+            id="example-message"
+            ></textarea></label>
+            <label><span> </span><input type="submit" className="button" onClick={sendEmail} value="Submit" /></label>
+            {/* <button className="button" onClick={sendEmail}>
+              Submit
+            </button> */}
         </form>
         {error && (
           <div>
             <p className="error-text">{error}</p>
           </div>
         )}
+        </div>
       </div>
-      </div>
-
-      
     </section>
   );
 };
