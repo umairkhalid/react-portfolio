@@ -81,14 +81,14 @@ footer p {
     font-style: italic;
     font-family: serif;
     display: block;
-    font-size: 48px;
+    font-size: 2rem;
     text-align: left;
-    padding-left: 10px;
+    padding-left: 55px;
 }
 
 h1.headings {
     color: var(--white);
-    font-weight: 800;
+    font-size: 3rem;
     padding-left: 40px;
 }
 
@@ -168,17 +168,18 @@ h1.headings {
 }
 
 .mypic {
-    width: 25vw;
-    height: 28vw;
+    width: 23vw;
+    height: 26vw;
     position: relative;
-    right: 15px;
+    right: -26px;
     top: 0vw;
+    margin-bottom: 2rem;
 }
 
 .p {
     flex: 3;
     line-height: 1.5rem;
-    padding-left: 2rem;
+    padding-left: 4rem;
     padding-right: 3rem;
     text-align: justify;
     font-family: 'Raleway', sans-serif;
@@ -187,23 +188,18 @@ h1.headings {
 .card-container {
     display: flex;
     justify-content: space-around;
-    /* width: 90%;
-    flex: 3;
-    flex-wrap: wrap;
-    padding-left: 2rem;
-    padding-right: 3rem;
-    text-align: left; */
+    flex-direction: row;
+}
+
+.about-card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
 }
 
 /* a.card:hover {
     opacity: 0.5;
-} */
-
-.card:nth-child(1) {
-    display: flex;
-    flex: 0 0 600px;;
-}
-	
+} */	
 
 /* .card {
     border: solid 4px rgb(0, 0, 0);
@@ -219,14 +215,14 @@ h1.headings {
 	height: 360px;
     margin: 1rem;
 	border-radius: 5px;
-    flex: 0 0 420px;
+    flex: 0 0 600px;
 	padding: 1.5rem;
 	background: white;
 	position: relative;
 	display: flex;
 	align-items: flex-end;
 	transition: 0.4s ease-out;
-	box-shadow: 0px 7px 10px rgba(black, 0.5);
+	/* box-shadow: 0px 7px 10px rgba(black, 0.5); */
 }
 	
 	.card:hover {
@@ -299,18 +295,19 @@ h1.headings {
 			
 		.card .info button {
             padding: 0.6rem;
+            margin-left: 10px;
 			outline: none;
 			border: none;
 			border-radius: 3px;
-			background: white;
-			color: black;
+			background: var(--white);
+			color: var(--blue);
 			font-weight: bold;
 			cursor: pointer;
 			transition: 0.4s ease;
         }
 			
             .card .info button:hover {
-                background: dodgerblue;
+                background: var(--turquoise);
 				color: white;
             }
 				
@@ -326,21 +323,20 @@ h1.headings {
 
 .card .headings {
     font-size: 2rem;
-}
+} */
 
 .card p {
     font-size: initial;
     padding-left: 1rem;
-    color: var(--blue);
+    color: var(--maize);
 }
 
 .card img {
     width: 100%;
     height: 100%;
-} */
+}
 
 .content-headings .headings {
-    padding-right: 1.5rem;
     margin-block-end: 0.83em;
 }
 
@@ -415,10 +411,14 @@ h1.headings {
 @media screen and (max-width: 768px) {
     .nav-menu,
     .container,
-    div#about-me.container .card-container
+    div#about-me.container,
+    .about-card-container,
+    .hero
     {
         flex-direction: column;
     }
+
+
 
     header {
         position: fixed;
@@ -428,8 +428,13 @@ h1.headings {
         display: none;
     }
 
+    .headings {
+        padding-left: 31px;
+    }
+
     h1.headings {
         font-size: 32px;
+        padding-left: 4px;
     }
 
     .card:nth-child(1) {
@@ -442,7 +447,6 @@ h1.headings {
 
     .content-headings {
         text-align: left;
-        padding-top: 140px;
     }
 
     .nav-link {
@@ -450,15 +454,16 @@ h1.headings {
     }
 
     .mypic {
-        left: 27px;
-        height: 32vh;
-        width: 28vh;
+        left: 38px;
+        height: 43vh;
+        width: 37vh;
         margin-bottom: 2rem;
     }
 
     .p {
-        padding-left: 0rem;
-        padding-right: 0rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        margin-bottom: 2rem;
     }
 
     .nav-container {

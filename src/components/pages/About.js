@@ -7,7 +7,7 @@ export default function About() {
         <div className="content-headings">
             <h2 className="headings">About Me</h2>
         </div>
-        <div className="card-container">
+        <div className="about-card-container">
             <img src={umair} className="mypic" alt="Umair"></img>
             <div className="p">
                 <p>

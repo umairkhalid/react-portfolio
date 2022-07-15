@@ -15,8 +15,7 @@ function Work() {
           A curated selection of some of the projects I've worked on. A full
           collection of my work is available on GitHub. There, you can also
           find the links to the deployed applications.
-        </p>
-        <p className="p">
+          <br></br>
           Click on the title of the project to visit the deployed application
           and click on the gitHub icon to visit the repo.
         </p>
