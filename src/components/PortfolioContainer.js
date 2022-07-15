@@ -6,6 +6,10 @@ import Contact from './pages/Contact';
 import Resume from './pages/Resume';
 import Footer from './Footer';
 
+//import skeleton CSS and stylesheet
+import '../styles/resets.css';
+import '../styles/style.css';
+
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState('About');
 

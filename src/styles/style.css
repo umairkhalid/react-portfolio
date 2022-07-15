@@ -30,7 +30,7 @@ html {
 /* Selector Elements */
 body {
     background-color: var(--white);
-    background-image: url(../src/assets/images/back.jpg);
+    background-image: url(../../src/assets/images/back.jpg);
     background-repeat: repeat;
     /* background-size: cover; */
     background-position: center;
@@ -57,9 +57,8 @@ main {
 }
 
 footer {
-    height: 30px;
-    background: var(--blue);
-    color: var(--maize);
+    /* background: var(--blue); */
+    color: var(--blue);
     text-align: center;
     padding: 5px;
     bottom: 0;
@@ -74,6 +73,22 @@ footer p {
 	margin: 0 auto;
 	line-height: 1;
 }
+
+.flex {
+    display: flex;
+  }
+  
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+  
+  .justify-center {
+    justify-content: center;
+  }
+  
+  .items-center {
+    align-items: center;
+  }
 
 /* Main class Elements */
 .headings {
@@ -164,7 +179,7 @@ h1.headings {
 
 .container {
     display: flex;
-    margin-bottom: 2rem;
+    flex-direction: column;
 }
 
 .mypic {
@@ -174,6 +189,13 @@ h1.headings {
     right: -26px;
     top: 0vw;
     margin-bottom: 2rem;
+
+    /* width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 1rem 0; */
 }
 
 .p {
@@ -183,6 +205,7 @@ h1.headings {
     padding-right: 3rem;
     text-align: justify;
     font-family: 'Raleway', sans-serif;
+    margin-bottom: 2rem;
 }
 
 .card-container {
@@ -196,19 +219,6 @@ h1.headings {
     justify-content: space-around;
     flex-direction: row;
 }
-
-/* a.card:hover {
-    opacity: 0.5;
-} */	
-
-/* .card {
-    border: solid 4px rgb(0, 0, 0);
-    border-width: 1px;
-    padding: 0px;
-    
-    
-    position: relative;
-} */
 
 .card {
     width: 280px;
@@ -310,20 +320,6 @@ h1.headings {
                 background: var(--turquoise);
 				color: white;
             }
-				
-
-/* .card-headings {
-    position: absolute;
-    background-color: beige;
-    font-size: 2em;
-    bottom: 15px;
-    opacity: 0.8;
-
-}
-
-.card .headings {
-    font-size: 2rem;
-} */
 
 .card p {
     font-size: initial;
@@ -343,7 +339,7 @@ h1.headings {
 .content-headings {
     flex: 1;
     text-align: right;
-    padding-top: 20px;
+    /* padding-top: 20px; */
 }
 
 .nav-contact {
@@ -360,27 +356,18 @@ h1.headings {
 
 .nav-link {
     /* position: absolute; */
-    margin-right: 5rem;
+    margin-right: 1rem;
 }
 
-.nav-link li {
+/* .nav-link li {
     display: inline-flex;
     padding: 0 3vh;
-}
+} */
 
 .nav-link a {
-    color: var(--maize);
-    font-size: large;
-    text-decoration: none;
-}
-
-.nav-link a::after {
-    content: '';
-    width: 0px;
-    height: 1px;
-    display: block;
-    background: var(--blue);
-    transition: 300ms;
+    color: var(--burnt);
+    font-size: 3rem;
+    transition: 0.3s ease-out;
 }
 
 .nav-link a:hover {
@@ -391,34 +378,23 @@ h1.headings {
     width: 100%;
 }
 
-.icon-style {
-    font-size: 3rem;
-    color: var(--sandy);
-  }
-  
-  .icon-style a:hover {
-    color: var(--burnt);
-  }
-  
-  .icon-style a:active {
-    color: var(--burnt);
-  }
-  
-  .icon-padding {
-    margin: 1rem;
+  .error-text {
+    color: red;
+    font-weight: 600;
+    line-height: 1.5rem;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 2rem;
   }
 
 @media screen and (max-width: 768px) {
     .nav-menu,
-    .container,
     div#about-me.container,
     .about-card-container,
     .hero
     {
         flex-direction: column;
     }
-
-
 
     header {
         position: fixed;
@@ -437,20 +413,12 @@ h1.headings {
         padding-left: 4px;
     }
 
-    .card:nth-child(1) {
-        flex: 0 0 285px;
-    }
-
     .card {
         flex: 0 0 285px;
     }
 
     .content-headings {
         text-align: left;
-    }
-
-    .nav-link {
-        margin: auto;
     }
 
     .mypic {
@@ -516,11 +484,4 @@ h1.headings {
         transform: translateY(-8px) rotate(-45deg);
     }
 
-    .nav-link li {
-        display: flex;
-        position: relative;
-        right: 78px;
-        /* padding: 0px 3vh; */
-        line-height: 0.9rem;
-    }
 }

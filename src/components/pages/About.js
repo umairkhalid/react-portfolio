@@ -3,7 +3,7 @@ import umair from '../../assets/images/portfolio_pic.png';
 
 export default function About() {
   return (
-    <div classNameName='container'>
+    <div className='container'>
         <div className="content-headings">
             <h2 className="headings">About Me</h2>
         </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
+import { FaGithubSquare, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 function Icons() {
   const iconItems = [
@@ -8,9 +8,9 @@ function Icons() {
         <a
           href="https://github.com/umairkhalid"
           target="_blank"
-          rel="noreferrer"
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}
+          rel="noopener noreferrer"
+          whilehover={{ scale: 1.1 }}
+          whiletap={{ scale: 0.9 }}
         >
           <FaGithubSquare />
         </a>
@@ -21,9 +21,19 @@ function Icons() {
         <a
           href="https://www.linkedin.com/in/umair-kha/"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
         >
           <FaLinkedin />
+        </a>
+      ),
+    },
+    {
+      icon: (
+        <a
+          href="mailto:umairkhalid@fastmail.fm"
+          aria-label="Send Umair an e-mail"
+        >
+          <FaEnvelope />
         </a>
       ),
     },
@@ -33,7 +43,7 @@ function Icons() {
     <div className="flex items-center justify-center">
       {iconItems.map((item) => (
         <div key={item.href}>
-          <div className="icon-style">
+          <div className="nav-link">
             <div className="icon-padding">
               <div>{item.icon}</div>
             </div>

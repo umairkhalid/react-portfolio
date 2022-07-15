@@ -1,18 +1,148 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
+import '../../styles/form.css';
 
-export default function Contact() {
+//import validation helpers
+import { validateEmail, validateMessage } from '../../utils/helpers';
+
+const ContactUs = () => {
+  const [name, setName] = useState();
+  const [email, setEmail] = useState();
+  const [message, setMessage] = useState();
+  const [error, setError] = useState();
+
+  //function to handle input changes on contact form
+  const handleInputChange = (event) => {
+    const { target } = event;
+    const inputType = target.name;
+    const inputValue = target.value;
+
+    if (inputType === 'email') {
+      setEmail(inputValue);
+    } else if (inputType === 'name') {
+      setName(inputValue);
+    } else {
+      setMessage(inputValue);
+    }
+  };
+
+  //https://developer.mozilla.org/en-US/docs/Web/API/Element/blur_event
+  const handleEmptyField = (event) => {
+    if (event.target.value.length === 0) {
+      setError(`${event.target.name} field is required.`);
+    }
+    else {
+      setError('');
+    }
+  };
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        'service_u5gwbp8',
+        'template_nts1yqk',
+        form.current,
+        'f6dIrrX1fEOYc8AJF'
+      )
+      .then(
+        () => {
+          alert('Message successfully sent!')
+          window.location.reload(false)
+        },
+        () => {
+          setError(error)
+        }
+      );
+
+    //error message handling
+    if (!validateEmail(email)) {
+      setError('Invalid email');
+      return;
+    }
+
+    //error message handling
+    if (!validateMessage(message && name)) {
+      setError('Please enter your name and a message');
+      return;
+    }
+
+    //after form submission, set the name, email message and error message to be blank
+    setName('');
+    setEmail('');
+    setMessage('');
+    setError('');
+  };
+
+  //return html content
   return (
-    <div className="container" id="contact">
-      <div className="content-headings">
-          <h2 className="headings">Contact Me</h2>
+    <section>
+      <div className="container">
+        <div className="content-headings">
+          <h2 className='headings'>Contact</h2>
+          <p className='p'>
+            If you want to get in touch to discuss project or collaboration
+            opportunities, work opportunities or have any questions about my
+            work you can find me at GitHub and LinkedIn. You can also shoot me
+            an email or use the contact form on this page.
+          </p>
+        </div>
+        <div className='form-style'>
+        <form id="contact-form" ref={form}>
+          <label for="name"><span>Name <span class="required">*</span></span>
+          <input
+            className="input-field"
+            value={name}
+            name="name"
+            onBlur={handleEmptyField}
+            onChange={handleInputChange}
+            type="text"
+            placeholder="Your Name"
+            id="name-input"
+          /></label>
+        
+          <label for="email"><span>Email <span class="required">*</span></span>
+          <input
+            className="input-field"
+            value={email}
+            type="email"
+            name="email"
+            onBlur={handleEmptyField}
+            onChange={handleInputChange}
+            placeholder="youremail@email.com"
+            id="email-input"
+          /></label>
+        
+        <label for="message"><span>Message <span class="required">*</span></span>
+        <textarea
+          className="textarea-field"
+          value={message}
+          name="message"
+          type="text"
+          onBlur={handleEmptyField}
+          onChange={handleInputChange}
+          placeholder="Your Message"
+          id="example-message"
+          ></textarea></label>
+          <label><span> </span><input type="submit" className="button" onClick={sendEmail} value="Submit" /></label>
+          {/* <button className="button" onClick={sendEmail}>
+            Submit
+          </button> */}
+        </form>
+        {error && (
+          <div>
+            <p className="error-text">{error}</p>
+          </div>
+        )}
       </div>
-      <div className="nav-contact">
-        <ul className="nav-link">
-            <li> <a href="mailto:umairkhalid@fastmail.fm">umairkhalid@fastmai.fm</a></li>
-            <li> <a href="https://www.linkedin.com/in/umair-khalid-8771b348/" rel="noreferrer" target="_blank">LinkedIn</a></li>
-            <li> <a href="https://github.com/umairkhalid" rel="noreferrer" target="_blank">Github</a></li>
-        </ul>
       </div>
-    </div>
+
+      
+    </section>
   );
-}
+};
+
+export default ContactUs;
