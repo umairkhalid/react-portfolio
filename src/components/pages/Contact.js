@@ -1,7 +1,5 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
-import '../../styles/resets.css';
-import '../../styles/style.css';
 import '../../styles/form.css';
 
 //import validation helpers
