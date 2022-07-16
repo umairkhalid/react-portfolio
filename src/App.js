@@ -1,5 +1,5 @@
 import { lazy, Suspense } from 'react';
-
+import Pre from './components/UIElements/Pre';
 const PortfolioContainer = lazy(() => {
   return new Promise((resolve) => {
     setTimeout(() => resolve(import('./components/PortfolioContainer')), 2000);
@@ -9,7 +9,7 @@ const PortfolioContainer = lazy(() => {
 const App = () => {
   return (
     <div className="App">
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Pre />}>
         <PortfolioContainer />
       </Suspense>
     </div>
