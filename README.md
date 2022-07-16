@@ -7,6 +7,8 @@
 
 ![axios](https://img.shields.io/badge/0.27.2-0?label=axios&style=flat-square&labelColor=yellow&color=black) ![gh-pages](https://img.shields.io/badge/4.0.0-0?label=gh-pages&style=flat-square&labelColor=darkred&color=black) ![react-dom](https://img.shields.io/badge/18.2.0-0?label=react-dom&style=flat-square&labelColor=darkgreen&color=black) ![web-vitals](https://img.shields.io/badge/2.1.4-0?label=web-vitals&style=flat-square&labelColor=darkblue&color=black)
 
+![ESLINT](https://img.shields.io/badge/-ESLINT-purple) ![Prettier](https://img.shields.io/badge/-Prettier-pink)
+
 ## Description
 
 This one-page web app displays an updated professional portfolio, showcasing a selection of projects I have worked and collaborated on, that was built with React front-end. The app allows information to load without refreshing the page, and a number of different components.
