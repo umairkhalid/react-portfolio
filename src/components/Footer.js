@@ -1,5 +1,5 @@
-import React from "react";
-import Icons from "../components/icons/Icons";
+import React from 'react';
+import Icons from '../components/icons/Icons';
 
 function Footer() {
   return (

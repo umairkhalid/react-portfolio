@@ -32,8 +32,7 @@ const ContactUs = () => {
   const handleEmptyField = (event) => {
     if (event.target.value.length === 0) {
       setError(`${event.target.name} field is required.`);
-    }
-    else {
+    } else {
       setError('');
     }
   };
@@ -43,22 +42,15 @@ const ContactUs = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        'service_u5gwbp8',
-        'template_nts1yqk',
-        form.current,
-        'f6dIrrX1fEOYc8AJF'
-      )
-      .then(
-        () => {
-          alert('Message successfully sent!')
-          window.location.reload(false)
-        },
-        () => {
-          setError(error)
-        }
-      );
+    emailjs.sendForm('service_u5gwbp8', 'template_nts1yqk', form.current, 'f6dIrrX1fEOYc8AJF').then(
+      () => {
+        alert('Message successfully sent!');
+        window.location.reload(false);
+      },
+      () => {
+        setError(error);
+      }
+    );
 
     //error message handling
     if (!validateEmail(email)) {
@@ -84,60 +76,70 @@ const ContactUs = () => {
     <section>
       <div className="container">
         <div className="content-headings">
-          <h2 className='headings'>Contact</h2>
-          <p className='p'>
-            If you want to get in touch to discuss project or collaboration
-            opportunities, work opportunities or have any questions about my
-            work you can find me at GitHub and LinkedIn. You can also shoot me
-            an email or use the contact form on this page.
+          <h2 className="headings">Contact</h2>
+          <p className="p">
+            If you want to get in touch to discuss project or collaboration opportunities, work
+            opportunities or have any questions about my work you can find me at GitHub and
+            LinkedIn. You can also shoot me an email or use the contact form on this page.
           </p>
         </div>
-        <div className='form-style'>
-        <form id="contact-form" ref={form}>
-          <label htmlFor="name"><span>Name <span className="required">*</span></span>
-          <input
-            value={name}
-            name="name"
-            onBlur={handleEmptyField}
-            onChange={handleInputChange}
-            type="text"
-            placeholder="Your Name"
-            id="name-input"
-          /></label>
-        
-          <label htmlFor="email"><span>Email <span className="required">*</span></span>
-          <input
-            value={email}
-            type="email"
-            name="email"
-            onBlur={handleEmptyField}
-            onChange={handleInputChange}
-            placeholder="youremail@email.com"
-            id="email-input"
-          /></label>
-        
-          <label htmlFor="message"><span>Message <span className="required">*</span></span>
-          <textarea
-            value={message}
-            name="message"
-            type="text"
-            onBlur={handleEmptyField}
-            onChange={handleInputChange}
-            placeholder="Your Message"
-            id="example-message"
-            ></textarea></label>
+        <div className="form-style">
+          <form id="contact-form" ref={form}>
+            <label htmlFor="name">
+              <span>
+                Name <span className="required">*</span>
+              </span>
+              <input
+                value={name}
+                name="name"
+                onBlur={handleEmptyField}
+                onChange={handleInputChange}
+                type="text"
+                placeholder="Your Name"
+                id="name-input"
+              />
+            </label>
+
+            <label htmlFor="email">
+              <span>
+                Email <span className="required">*</span>
+              </span>
+              <input
+                value={email}
+                type="email"
+                name="email"
+                onBlur={handleEmptyField}
+                onChange={handleInputChange}
+                placeholder="youremail@email.com"
+                id="email-input"
+              />
+            </label>
+
+            <label htmlFor="message">
+              <span>
+                Message <span className="required">*</span>
+              </span>
+              <textarea
+                value={message}
+                name="message"
+                type="text"
+                onBlur={handleEmptyField}
+                onChange={handleInputChange}
+                placeholder="Your Message"
+                id="example-message"></textarea>
+            </label>
             <div>
-            {/* <label><span> </span><input type="submit" className="bttn" onClick={sendEmail} value="Submit" /></label> */}
-            <button className="bttn" onClick={sendEmail}>
-              Submit
-            </button>
+              {/* <label><span> </span><input type="submit" className="bttn" onClick={sendEmail} value="Submit" /></label> */}
+              <button className="bttn" onClick={sendEmail}>
+                Submit
+              </button>
             </div>
-        </form>
-        {error && (
-          <div>
-            <p className="error-text">{error}</p>
-          </div>
-        )}
+          </form>
+          {error && (
+            <div>
+              <p className="error-text">{error}</p>
+            </div>
+          )}
         </div>
       </div>
     </section>

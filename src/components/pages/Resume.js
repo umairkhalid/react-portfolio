@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
-import pdf from "../../assets/Umair_CV_IT_New.pdf";
-import { AiOutlineDownload } from "react-icons/ai";
-import { Document, Page } from "react-pdf";
+import React, { useState, useEffect } from 'react';
+import pdf from '../../assets/Umair_CV_IT_New.pdf';
+import { AiOutlineDownload } from 'react-icons/ai';
+import { Document, Page } from 'react-pdf';
 // import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 // pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
@@ -21,29 +21,28 @@ function Resume() {
     <div className="resume-container">
       <div>
         <div className="resume-align">
-        <a href={pdf} target="_blank" rel="noreferrer">
-          <button
-            className="resume-button"
-            variant="primary"
-            target="_blank" 
-          >
-            <AiOutlineDownload />
-            &nbsp;Download CV
-          </button>
+          <a href={pdf} target="_blank" rel="noreferrer">
+            <button className="resume-button" variant="primary" target="_blank">
+              <AiOutlineDownload />
+              &nbsp;Download CV
+            </button>
           </a>
-          <p style={{ padding: "20px" }}>
+          <p style={{ padding: '20px' }}>
             Page {1} of {numPages}
           </p>
         </div>
 
         <div>
-          <Document file={pdf} onLoadSuccess={onDocumentLoadSuccess} className="d-flex justify-content-center">
+          <Document
+            file={pdf}
+            onLoadSuccess={onDocumentLoadSuccess}
+            className="d-flex justify-content-center">
             <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
           </Document>
         </div>
 
         <div className="resume-align">
-          <p style={{ padding: "20px" }}>
+          <p style={{ padding: '20px' }}>
             Page {1} of {numPages}
           </p>
           <a href={pdf} target="_blank" rel="noreferrer">
@@ -51,8 +50,7 @@ function Resume() {
               className="resume-button"
               variant="primary"
               target="_blank"
-              style={{ marginBottom: "40px" }}
-            >
+              style={{ marginBottom: '40px' }}>
               <AiOutlineDownload />
               &nbsp;Download CV
             </button>

@@ -1,5 +1,5 @@
-import React from "react";
-import { FaGithubSquare, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import React from 'react';
+import { FaGithubSquare, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
 function Icons() {
   const iconItems = [
@@ -10,33 +10,25 @@ function Icons() {
           target="_blank"
           rel="noopener noreferrer"
           whilehover={{ scale: 1.1 }}
-          whiletap={{ scale: 0.9 }}
-        >
+          whiletap={{ scale: 0.9 }}>
           <FaGithubSquare />
         </a>
-      ),
+      )
     },
     {
       icon: (
-        <a
-          href="https://www.linkedin.com/in/umair-kha/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="https://www.linkedin.com/in/umair-kha/" target="_blank" rel="noopener noreferrer">
           <FaLinkedin />
         </a>
-      ),
+      )
     },
     {
       icon: (
-        <a
-          href="mailto:umairkhalid@fastmail.fm"
-          aria-label="Send Umair an e-mail"
-        >
+        <a href="mailto:umairkhalid@fastmail.fm" aria-label="Send Umair an e-mail">
           <FaEnvelope />
         </a>
-      ),
-    },
+      )
+    }
   ];
 
   return (
