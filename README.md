@@ -1,70 +1,83 @@
-# Getting Started with Create React App
+# React Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![react](https://img.shields.io/badge/18.2.0-0?label=react.js&style=for-the-badge&labelColor=white&color=black)
 
-## Available Scripts
+![axios](https://img.shields.io/badge/0.27.2-0?label=axios&style=flat-square&labelColor=gray&color=black) ![bootstrap](https://img.shields.io/badge/5.1.3-0?label=bootstrap&style=flat-square&labelColor=gray&color=black) ![dotenv](https://img.shields.io/badge/16.0.1-0?label=dotenv&style=flat-square&labelColor=gray&color=black) ![gh-pages](https://img.shields.io/badge/4.0.0-0?label=gh-pages&style=flat-square&labelColor=gray&color=black) ![react-dom](https://img.shields.io/badge/18.2.0-0?label=react-dom&style=flat-square&labelColor=gray&color=black) ![react-scripts](https://img.shields.io/badge/react-scripts-0?label=5.0.1&style=flat-square&labelColor=gray&color=black) ![web-vitals](https://img.shields.io/badge/2.1.4-0?label=web-vitals&style=flat-square&labelColor=gray&color=black)
 
-In the project directory, you can run:
+## Description
 
-### `npm start`
+This one-page web app displays an updated professional portfolio, showcasing a selection of projects I have worked and collaborated on, that was built with React front-end. The app allows information to load without refreshing the page, and a number of different components.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This Node application uses various npm packages and libraries such as `react-pdf` and `react-icons`.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Further, `gh-pages` package is used to deploy this app on server.
 
-### `npm test`
+## Table of Contents
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [Technologies](#technologies)
+- [Usage](#usage)
+- [Demo](#demo)
+- [License](#license)
+- [Questions](#questions)
 
-### `npm run build`
+## [Technologies](#table-of-contents)
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- React
+- JavaScript
+- CSS
+- HTML
+- Google Fonts
+- React Icons
+- React PDF
+- EmailJS
+- Deployed on GitHub Pages
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## [Usage](#table-of-contents)
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- The app is deployed at https://umairkhalid.github.io/react-portfolio/
+- The repo is at https://github.com/umairkhalid/react-portfolio
 
-### `npm run eject`
+### 0. Download Node
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+| Programs | Download links                  |
+| -------- | ------------------------------- |
+| `Node`   | https://nodejs.org/en/download/ |
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 1. Git clone and go inside
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```sh
+git clone https://github.com/umairkhalid/react-portfolio.git
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+cd react-portfolio
+```
 
-## Learn More
+### 2. Install dependencies
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```sh
+npm install
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Usage
 
-### Code Splitting
+```sh
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## [Demo](#table-of-contents)
+---
 
-### Analyzing the Bundle Size
+![Demo of application in use](/src/assets/images/app_demo.gif)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## [License](#table-of-contents)
 
-### Making a Progressive Web App
+The application is covered under the following license: [MIT](https://choosealicense.com/licenses/mit/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## [Questions](#table-of-contents)
 
-### Advanced Configuration
+If you have any question about the repo, open an issue or contact me directly at [Email: umairkhalid@fastmail.fm](mailto:umairkhalid@fastmail.fm).
+You can find more of my work at [GitHub](https://github.com/umairkhalid).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+© 2022 Umair Khalid. Confidential and Proprietary. All Rights Reserved.

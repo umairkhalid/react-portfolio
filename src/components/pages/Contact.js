@@ -5,7 +5,7 @@ import '../../styles/style.css';
 import '../../styles/form.css';
 
 //import validation helpers
-import { validateEmail, validateMessage } from '../../utils/helpers';
+import { validateEmail } from '../../utils/helpers';
 
 const ContactUs = () => {
   const [name, setName] = useState();
@@ -44,7 +44,7 @@ const ContactUs = () => {
 
     emailjs.sendForm('service_u5gwbp8', 'template_nts1yqk', form.current, 'f6dIrrX1fEOYc8AJF').then(
       () => {
-        alert('Message successfully sent!');
+        setError('Message successfully sent!');
         window.location.reload(false);
       },
       () => {
@@ -58,17 +58,17 @@ const ContactUs = () => {
       return;
     }
 
-    //error message handling
-    if (!validateMessage(message && name)) {
-      setError('Please enter your name and a message');
-      return;
-    }
+    // //error message handling
+    // if (!validateMessage(message && name)) {
+    //   setError('Please enter your name and a message');
+    //   return;
+    // }
 
     //after form submission, set the name, email message and error message to be blank
-    setName('');
-    setEmail('');
-    setMessage('');
-    setError('');
+    // setName('');
+    // setEmail('');
+    // setMessage('');
+    // setError('');
   };
 
   //return html content

@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import pdf from '../../assets/Umair_CV_IT_New.pdf';
 import { AiOutlineDownload } from 'react-icons/ai';
-import { Document, Page } from 'react-pdf';
+import { Document, Page, pdfjs } from 'react-pdf';
 // import "react-pdf/dist/esm/Page/AnnotationLayer.css";
-// pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 function Resume() {
   const [width, setWidth] = useState(1200);
