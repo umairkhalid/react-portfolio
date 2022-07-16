@@ -1,8 +1,11 @@
 # React Portfolio
 
-![react](https://img.shields.io/badge/18.2.0-0?label=react.js&style=for-the-badge&labelColor=white&color=black)
+![react](https://img.shields.io/badge/18.2.0-0?label=react.js&style=for-the-badge&labelColor=orange&color=black)
 
-![axios](https://img.shields.io/badge/0.27.2-0?label=axios&style=flat-square&labelColor=gray&color=black) ![bootstrap](https://img.shields.io/badge/5.1.3-0?label=bootstrap&style=flat-square&labelColor=gray&color=black) ![dotenv](https://img.shields.io/badge/16.0.1-0?label=dotenv&style=flat-square&labelColor=gray&color=black) ![gh-pages](https://img.shields.io/badge/4.0.0-0?label=gh-pages&style=flat-square&labelColor=gray&color=black) ![react-dom](https://img.shields.io/badge/18.2.0-0?label=react-dom&style=flat-square&labelColor=gray&color=black) ![react-scripts](https://img.shields.io/badge/react-scripts-0?label=5.0.1&style=flat-square&labelColor=gray&color=black) ![web-vitals](https://img.shields.io/badge/2.1.4-0?label=web-vitals&style=flat-square&labelColor=gray&color=black)
+![HTML](https://img.shields.io/badge/-HTML-orange) ![JS](https://img.shields.io/badge/-JS-yellow) ![Node](https://img.shields.io/badge/-Node-darkgreen)
+![JEST](https://img.shields.io/badge/-JEST-darkred)
+
+![axios](https://img.shields.io/badge/0.27.2-0?label=axios&style=flat-square&labelColor=yellow&color=black) ![gh-pages](https://img.shields.io/badge/4.0.0-0?label=gh-pages&style=flat-square&labelColor=darkred&color=black) ![react-dom](https://img.shields.io/badge/18.2.0-0?label=react-dom&style=flat-square&labelColor=darkgreen&color=black) ![web-vitals](https://img.shields.io/badge/2.1.4-0?label=web-vitals&style=flat-square&labelColor=darkblue&color=black)
 
 ## Description
 
