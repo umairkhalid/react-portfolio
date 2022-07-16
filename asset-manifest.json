@@ -1,8 +1,11 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.283689e2.css",
-    "main.js": "/react-portfolio/static/js/main.cf3fa356.js",
+    "main.css": "/react-portfolio/static/css/main.429ac0dd.css",
+    "main.js": "/react-portfolio/static/js/main.17970472.js",
+    "static/css/758.60f91a56.chunk.css": "/react-portfolio/static/css/758.60f91a56.chunk.css",
+    "static/js/758.76659d09.chunk.js": "/react-portfolio/static/js/758.76659d09.chunk.js",
     "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
+    "static/js/773.5975bb2a.chunk.js": "/react-portfolio/static/js/773.5975bb2a.chunk.js",
     "static/media/portfolio_pic.png": "/react-portfolio/static/media/portfolio_pic.fde299acbcc74164c0dd.png",
     "static/media/dark-crawler.png": "/react-portfolio/static/media/dark-crawler.f092bc7c2126de77e997.png",
     "static/media/back.jpg": "/react-portfolio/static/media/back.44ef648559e3825838e0.jpg",
@@ -13,12 +16,15 @@
     "static/media/moovee.png": "/react-portfolio/static/media/moovee.2f8b7afe4e106d85b405.png",
     "static/media/code_quiz.png": "/react-portfolio/static/media/code_quiz.fc72b9083f81f7d32d5a.png",
     "index.html": "/react-portfolio/index.html",
-    "main.283689e2.css.map": "/react-portfolio/static/css/main.283689e2.css.map",
-    "main.cf3fa356.js.map": "/react-portfolio/static/js/main.cf3fa356.js.map",
-    "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
+    "main.429ac0dd.css.map": "/react-portfolio/static/css/main.429ac0dd.css.map",
+    "main.17970472.js.map": "/react-portfolio/static/js/main.17970472.js.map",
+    "758.60f91a56.chunk.css.map": "/react-portfolio/static/css/758.60f91a56.chunk.css.map",
+    "758.76659d09.chunk.js.map": "/react-portfolio/static/js/758.76659d09.chunk.js.map",
+    "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map",
+    "773.5975bb2a.chunk.js.map": "/react-portfolio/static/js/773.5975bb2a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.283689e2.css",
-    "static/js/main.cf3fa356.js"
+    "static/css/main.429ac0dd.css",
+    "static/js/main.17970472.js"
   ]
 }
