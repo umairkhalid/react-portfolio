@@ -13,7 +13,7 @@
 /* set content highlight color and background */
 ::selection {
     background-color: var(--turquoise);
-    color: var(--blue);
+    color: var(--white);
 }
 
 /* Universal Elements */
@@ -386,6 +386,40 @@ h1.headings {
     font-family: 'Raleway', sans-serif;
     margin-top: 2rem;
   }
+
+  .resume-container {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+  }
+
+  .resume-align {
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    align-items: center;
+  }
+
+  .resume-button {
+    height: 42px;
+    width: 250px;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+	box-sizing: border-box;
+	box-shadow: 1px 1px 4px #DADADA;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	padding: 10px;
+	background: var(--burnt);
+    color: var(--white);
+	cursor: pointer;
+	transition: 0.4s ease;	
+}
+.resume-button:hover {
+	background: var(--blue);
+    color: var(--burnt);
+}
 
 @media screen and (max-width: 768px) {
     .nav-menu,
