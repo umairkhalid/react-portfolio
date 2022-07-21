@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import pdf from '../../assets/Umair_CV_IT_New.pdf';
+import pdf from '../../assets/Umair_CV_PDF.pdf';
 import { AiOutlineDownload } from 'react-icons/ai';
 import { Document, Page, pdfjs } from 'react-pdf';
 // import "react-pdf/dist/esm/Page/AnnotationLayer.css";
