@@ -220,6 +220,15 @@ h1.headings {
     flex-direction: row;
 }
 
+.skills {
+    display: flex;
+  }
+
+.skills-spacer {
+    flex: 1;
+    display: flex;
+}
+
 .card {
     width: 280px;
 	height: 360px;
@@ -425,7 +434,9 @@ h1.headings {
     .nav-menu,
     div#about-me.container,
     .about-card-container,
-    .hero
+    .hero,
+    .skills,
+    .skills-spacer
     {
         flex-direction: column;
     }

@@ -1,5 +1,6 @@
 import React from 'react';
 import Project from '../Project';
+import itsy from '../../assets/images/itsy_bitsy.png';
 import dark from '../../assets/images/dark-crawler.png';
 import blog from '../../assets/images/tech-blog.png';
 import movie from '../../assets/images/moovee.png';
@@ -24,6 +25,14 @@ function Work() {
 
 export default function Portfolio() {
   const projects = [
+    {
+      title: 'Itsy Bitsy Daycare',
+      description:
+        'This project is daycare booking app built as a MERN application built using React front-end, GraphQL, Node.js and Express.js server, Mongoose ODM and MongoDB.',
+      deployedURL: 'https://itsy-bitsy-daycare.herokuapp.com/',
+      repoURL: 'https://github.com/umairkhalid/Itsy-bitsy-daycare',
+      imageURL: itsy
+    },
     {
       title: 'Dark Crawler',
       description:

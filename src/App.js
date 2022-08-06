@@ -2,7 +2,7 @@ import { lazy, Suspense } from 'react';
 import Pre from './components/UIElements/Pre';
 const PortfolioContainer = lazy(() => {
   return new Promise((resolve) => {
-    setTimeout(() => resolve(import('./components/PortfolioContainer')), 2000);
+    setTimeout(() => resolve(import('./components/PortfolioContainer')), 1500);
   });
 });
 

@@ -78,7 +78,11 @@ const ContactUs = () => {
           <p className="p">
             If you want to get in touch to discuss project or collaboration opportunities, work
             opportunities or have any questions about my work you can find me at GitHub and
-            LinkedIn. You can also shoot me an email or use the contact form on this page.
+            LinkedIn. You can also shoot me an email at{' '}
+            <span>
+              <a href="mailto:umairkhalid@fastmail.fm">umairkhalid@fastmail.fm</a>
+            </span>{' '}
+            or use the contact form on this page.
           </p>
         </div>
         <div className="form-style">
