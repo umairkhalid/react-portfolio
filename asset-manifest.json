@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.429ac0dd.css",
-    "main.js": "/react-portfolio/static/js/main.c6b8e1ad.js",
+    "main.js": "/react-portfolio/static/js/main.2652ff27.js",
     "static/css/146.47763e59.chunk.css": "/react-portfolio/static/css/146.47763e59.chunk.css",
-    "static/js/146.e20a3d21.chunk.js": "/react-portfolio/static/js/146.e20a3d21.chunk.js",
+    "static/js/146.9b6b0487.chunk.js": "/react-portfolio/static/js/146.9b6b0487.chunk.js",
     "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
     "static/js/658.d4d3dce5.chunk.js": "/react-portfolio/static/js/658.d4d3dce5.chunk.js",
     "static/media/itsy_bitsy.png": "/react-portfolio/static/media/itsy_bitsy.3c5d6c2bf6c8b823b677.png",
@@ -18,14 +18,14 @@
     "static/media/code_quiz.png": "/react-portfolio/static/media/code_quiz.fc72b9083f81f7d32d5a.png",
     "index.html": "/react-portfolio/index.html",
     "main.429ac0dd.css.map": "/react-portfolio/static/css/main.429ac0dd.css.map",
-    "main.c6b8e1ad.js.map": "/react-portfolio/static/js/main.c6b8e1ad.js.map",
+    "main.2652ff27.js.map": "/react-portfolio/static/js/main.2652ff27.js.map",
     "146.47763e59.chunk.css.map": "/react-portfolio/static/css/146.47763e59.chunk.css.map",
-    "146.e20a3d21.chunk.js.map": "/react-portfolio/static/js/146.e20a3d21.chunk.js.map",
+    "146.9b6b0487.chunk.js.map": "/react-portfolio/static/js/146.9b6b0487.chunk.js.map",
     "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map",
     "658.d4d3dce5.chunk.js.map": "/react-portfolio/static/js/658.d4d3dce5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.429ac0dd.css",
-    "static/js/main.c6b8e1ad.js"
+    "static/js/main.2652ff27.js"
   ]
 }
